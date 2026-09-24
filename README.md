@@ -12,20 +12,25 @@ Abra [Releases](../../releases): a versão mais nova fica em destaque. Arquivos 
 |---|---|
 | `WeightFlow_X.Y.Z_x64-setup.exe` | Instalador Windows padrão (baixa o WebView2 se faltar) |
 | `WeightFlow_X.Y.Z_x64-setup-offline.exe` | Instalador Windows com WebView2 embutido — para PC sem internet |
-| `WeightFlow_X.Y.Z_x64_en-US.msi` | MSI para instalação por política/TI |
-| `latest.json` | Manifesto lido pela página de download do site |
+| `WeightFlow_X.Y.Z_x64_pt-BR.msi` | MSI para instalação por política/TI |
+| `WeightFlow_X.Y.Z_amd64.deb` | Pacote para Ubuntu e Debian (`sudo apt install ./arquivo.deb`) |
+| `WeightFlow_X.Y.Z_amd64.AppImage` | Linux, qualquer distribuição: `chmod +x` e abrir (precisa do WebKitGTK 4.1) |
+| `WeightFlow-X.Y.Z-1.x86_64.rpm` | Pacote para Fedora e RHEL (`sudo dnf install ./arquivo.rpm`) |
+| `latest.json` | Manifesto da versão: a página de download do site é montada a partir dele |
 | `SHA256SUMS` | Somas SHA-256 de todos os arquivos da versão |
 
-Conferir a integridade (PowerShell): `Get-FileHash .\WeightFlow_X.Y.Z_x64-setup.exe -Algorithm SHA256`
-e comparar com a linha correspondente em `SHA256SUMS`.
+Conferir a integridade — Windows (PowerShell): `Get-FileHash .\WeightFlow_X.Y.Z_x64-setup.exe -Algorithm SHA256`
+e comparar com a linha correspondente em `SHA256SUMS`; Linux: `sha256sum -c SHA256SUMS --ignore-missing`
+na pasta do download.
 
 URL estável de cada arquivo:
 `https://github.com/marcioscardua/weightflow_releases/releases/download/vX.Y.Z/<arquivo>`.
 
 ## Requisitos
 
-Windows 10 ou 11 de 64 bits. Ubuntu (`.deb`, AppImage, `.rpm`) e macOS entram na matriz quando
-forem homologados.
+Windows 10 ou 11 de 64 bits (plataforma principal). Linux de 64 bits com WebKitGTK 4.1 — Ubuntu 22.04,
+Debian 12, Fedora 40 ou mais novos (plataforma secundária); para a porta serial, o usuário precisa estar
+no grupo `dialout`. macOS entra quando for homologado.
 
 ## Suporte
 
