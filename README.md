@@ -32,12 +32,11 @@ URL estável de cada arquivo:
 
 Windows 10 ou 11 de 64 bits (plataforma principal). Linux de 64 bits com WebKitGTK 4.1 — Ubuntu 22.04,
 Debian 12, Fedora 40 ou mais novos (plataforma secundária); para a porta serial, o usuário precisa estar
-no grupo `dialout`. macOS 11 ou mais novo, em Mac com Apple Silicon ou Intel (plataforma secundária, com
+no grupo `dialout`. macOS 13.3 ou mais novo, em Mac com Apple Silicon ou Intel (plataforma secundária, com
 homologação depois do Windows).
 
 Se, na primeira abertura, o macOS avisar que não pôde verificar o app ou o desenvolvedor: feche o aviso,
-abra Ajustes do Sistema → Privacidade e Segurança e, em Segurança, clique em “Abrir Mesmo Assim”
-(até o macOS 12: Preferências do Sistema → Segurança e Privacidade → Geral).
+abra Ajustes do Sistema → Privacidade e Segurança e, em Segurança, clique em “Abrir Mesmo Assim”.
 
 ## Suporte
 
