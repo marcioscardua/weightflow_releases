@@ -1,44 +1,62 @@
-# WeightFlow · Downloads (`weightflow_releases`)
+# WeightFlow
 
-Repositório **público** só de Releases: instaladores do WeightFlow desktop, `latest.json` e `SHA256SUMS`,
-uma Release por versão `vX.Y.Z`. Nenhum código vive aqui — o desktop é desenvolvido em repositório
-privado e o seu CI publica aqui a cada tag (ADR-019).
+**O peso certo. A rede conectada. A gestão à vista.**
 
-## Baixar
+O WeightFlow é o software de pesagem rodoviária para quem move a produção: redes de fazendas,
+armazéns, cerealistas, cooperativas e usinas. Ele organiza a rotina da balança, da chegada do
+caminhão à liberação da carga, e leva essa informação para a gestão de toda a rede.
 
-Abra [Releases](../../releases): a versão mais nova fica em destaque. Arquivos por versão:
+Aqui ficam os instaladores oficiais do programa da balança. Para conhecer a solução, ver os planos
+e comprar, acesse **[weightflow.com.br](https://weightflow.com.br)**.
 
-| Arquivo | O que é |
-|---|---|
-| `WeightFlow_X.Y.Z_x64-setup.exe` | Instalador Windows padrão (baixa o WebView2 se faltar) |
-| `WeightFlow_X.Y.Z_x64-setup-offline.exe` | Instalador Windows com WebView2 embutido — para PC sem internet |
-| `WeightFlow_X.Y.Z_x64_pt-BR.msi` | MSI para instalação por política/TI |
-| `WeightFlow_X.Y.Z_amd64.deb` | Pacote para Ubuntu e Debian (`sudo apt install ./arquivo.deb`) |
-| `WeightFlow_X.Y.Z_amd64.AppImage` | Linux, qualquer distribuição: `chmod +x` e abrir (precisa do WebKitGTK 4.1) |
-| `WeightFlow-X.Y.Z-1.x86_64.rpm` | Pacote para Fedora e RHEL (`sudo dnf install ./arquivo.rpm`) |
-| `WeightFlow_X.Y.Z_universal.dmg` | macOS, um arquivo só para Mac com Apple Silicon ou Intel: abra e arraste o WeightFlow para Aplicativos (nas versões que trazem o `.dmg`) |
-| `latest.json` | Manifesto da versão: a página de download do site é montada a partir dele |
-| `SHA256SUMS` | Somas SHA-256 de todos os arquivos da versão |
+## O que o WeightFlow faz
 
-Conferir a integridade — Windows (PowerShell): `Get-FileHash .\WeightFlow_X.Y.Z_x64-setup.exe -Algorithm SHA256`
-e comparar com a linha correspondente em `SHA256SUMS`; Linux: `sha256sum -c SHA256SUMS --ignore-missing`
-na pasta do download; macOS (Terminal): `shasum -a 256 WeightFlow_X.Y.Z_universal.dmg` e comparar com a
-linha correspondente em `SHA256SUMS`.
+- **Pesagem completa.** Tara, bruto e líquido num registro só, com veículo, parceiro, produto e
+  safra vinculados à pesagem.
+- **Classificação no mesmo fluxo.** Umidade, impureza e descontos, com a memória de cálculo no
+  certificado de classificação.
+- **Estoque em dia.** Depósitos, silos e moegas com saldo corrente: cada entrada e saída pesada
+  atualiza a posição por produto e por unidade.
+- **Tudo para conferir.** Tickets, relatórios e trilha de auditoria de cada carga.
+- **Sem depender da internet.** A balança continua registrando no local mesmo quando a conexão cai.
 
-URL estável de cada arquivo:
-`https://github.com/marcioscardua/weightflow_releases/releases/download/vX.Y.Z/<arquivo>`.
+## Planos
 
-## Requisitos
+**Standard: a operação local.** Tudo o que a balança precisa no computador da casa de balança:
+pesagem, classificação, estoque de silos e tickets.
 
-Windows 10 ou 11 de 64 bits (plataforma principal). Linux de 64 bits com WebKitGTK 4.1 — Ubuntu 22.04,
-Debian 12, Fedora 40 ou mais novos (plataforma secundária); para a porta serial, o usuário precisa estar
-no grupo `dialout`. macOS 13.3 ou mais novo, em Mac com Apple Silicon ou Intel (plataforma secundária, com
-homologação depois do Windows).
+**Pro: a visão de gestão.** Os registros das unidades vão para a nuvem e viram painéis no portal
+web. Você compara unidades, filtra por período, produto e safra e acompanha a operação de onde
+estiver. Com o módulo opcional Pesagem remota, também comanda a balança pelo portal.
 
-Se, na primeira abertura, o macOS avisar que não pôde verificar o app ou o desenvolvedor: feche o aviso,
-abra Ajustes do Sistema → Privacidade e Segurança e, em Segurança, clique em “Abrir Mesmo Assim”.
+Nos dois planos você compra a licença única do software, que é sua. No Pro há uma mensalidade, que
+cobre a nuvem.
 
-## Suporte
+## Como começar
 
-Dúvidas e problemas de instalação: pelo canal de atendimento informado no site. Este repositório
-não recebe issues de código.
+1. **Escolha o plano** em [weightflow.com.br](https://weightflow.com.br): simule o valor, crie a
+   sua conta e faça o pedido.
+2. **Receba a chave da licença**, que aparece na tela Licenças do portal ou chega pelo seu
+   representante.
+3. **Baixe o instalador** na [página de download](https://weightflow.com.br/download/). Ela indica
+   o arquivo certo para o seu computador e mostra o passo a passo. Todas as versões também ficam em
+   [Releases](../../releases).
+4. **Ative o terminal** com a chave da licença e comece a pesar. A ativação precisa de internet.
+
+O WeightFlow funciona em Windows, Linux e macOS.
+
+## Para assistências de balanças
+
+Venda e atenda o WeightFlow na sua região. Como representante, você monta a sua carteira de clientes
+no portal, compra as licenças com condição de canal e acompanha as redes que atende, com uma cobrança
+mensal consolidada. Faça o cadastro em
+[weightflow.com.br/representantes](https://weightflow.com.br/representantes/).
+
+## Atendimento
+
+Dúvidas sobre planos, compra ou instalação: fale com a equipe WeightFlow pelo site
+[weightflow.com.br](https://weightflow.com.br) ou com o seu representante.
+
+---
+
+WeightFlow é um produto da TRIDAP Desenvolvimento de Software Ltda. CNPJ 52.719.949/0001-40.
